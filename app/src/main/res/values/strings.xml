@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LogicGame</string>
+    <string name="join_label">Join</string>
+    <string name="username_text_view">Username</string>
+    <string name="code_placeholder">Game Code</string>
+    <string name="password_placeholder">Game Code</string>
+    <string name="username_Placeholder">Username</string>
+    <string name="error_label_text">Inserisci tutti i dati per favore!</string>
+    <string name="waiting_label_text">Attendo il docente..</string>
+    <string name="connected_users_label">Utenti connessi: 1</string>
+    <string name="send_button_label">Rispondi</string>
+    <string name="waiting_for_answers_label">Attendo le risposte..</string>
+    <string name="greetings_label">Grazie per aver giocato!</string>
+    <string name="see_you_next_time_label">Alla prossima!</string>
+    <string name="default_notification_channel_id">CH1</string>
+    <string name="default_notification_channel_description">Channel for end quiz notification</string>
+
+
+
+</resources>

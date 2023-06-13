@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#686868"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/greetingsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/greetings_label"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:targetApi="o" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/usernameEndQuizLabel"
+        android:layout_width="370dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:targetApi="o"
+        tools:text="Simoncello" />
+
+    <LinearLayout
+        android:id="@+id/resultsCard"
+        android:layout_width="0dp"
+        android:layout_height="250sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEndQuizLabel">
+
+        <TextView
+            android:id="@+id/positionEndQuizLabel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="Ti sei classificato 1"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/pointsEndQuizLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="hai 100 punti"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/seeYouNextTimeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/see_you_next_time_label"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:targetApi="o" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

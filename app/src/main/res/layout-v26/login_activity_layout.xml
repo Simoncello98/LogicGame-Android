@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#F2F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/greetingsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/join_label"
+            android:textAlignment="center"
+            android:textColor="#327B21"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:targetApi="o" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/usernameTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:hint="@string/username_Placeholder"
+        android:inputType="textPersonName"
+        android:text="@string/username_text_view"
+        app:layout_constraintBottom_toTopOf="@+id/centerGuideLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/codeTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:hint="@string/password_placeholder"
+        android:inputType="textPassword"
+        android:text="@string/username_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/centerGuideLine" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="484dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/join_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeTextEdit" />
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:text="@string/error_label_text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
